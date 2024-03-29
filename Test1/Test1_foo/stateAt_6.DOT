@@ -1,0 +1,17 @@
+digraph sample {
+  rankDir="LR";
+  subgraph cluster_0 {
+    label="Stack"
+    "r1"; "$r2"; "$r0"; "r7"; 
+  }
+  "r1" -> { O13 };
+  "$r2" -> { O14 };
+  "$r0" -> { O13 };
+  "r7" -> { O14 };
+  O13[shape=box];
+  O14[shape=box];
+  "r1"[color="green"];
+  O13[color="green"];
+  O14[color="green"];
+  "r7"[color="green"];
+}

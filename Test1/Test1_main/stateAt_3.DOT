@@ -1,0 +1,8 @@
+digraph sample {
+  rankDir="LR";
+  subgraph cluster_0 {
+    label="Stack"
+    "r1"; 
+  }
+  "r1" -> { };
+}

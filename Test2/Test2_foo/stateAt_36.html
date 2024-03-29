@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><title>stateAt_36(36)</title><style>.mainContainer {display: flex;}
+.codeContainer{ background-color: lavender; padding: 10px; border-radius: 5px; }
+.selectedInstruction{ font-weight: bold; color: red; }
+.methodName { font-family: monospace; }
+code { display: block; white-space: pre-wrap }
+</style></head>
+<body>
+<h1 class="methodName"> Test2_foo@36 </h1>
+ <div class="mainContainer">
+   <code class="codeContainer">
+      13 : $r0 = new Test2Node
+      13 : specialinvoke $r0.|Test2Node: void |init|()|()
+      13 : r1 = $r0
+      14 : $r2 = new Test2Node
+      14 : specialinvoke $r2.|Test2Node: void |init|()|()
+      14 : r3 = $r2
+      15 : $r4 = new Test1A
+      15 : specialinvoke $r4.|Test1A: void |init|()|()
+      15 : r5 = $r4
+      16 : $r6 = new Test1B
+      16 : specialinvoke $r6.|Test1B: void |init|()|()
+      16 : r7 = $r6
+      17 : $r8 = new Test2Node
+      17 : specialinvoke $r8.|Test2Node: void |init|()|()
+      17 : r1.|Test2Node: Test2Node f| = $r8
+      18 : staticinvoke |Test2: void bar(Test2Node,Test2Node)|(r1, r3)
+      19 : virtualinvoke r5.|Test1A: void baz(Test2Node,Test2Node)|(r1, r3)
+      <div class="selectedInstruction">20 : virtualinvoke r7.|Test1A: void baz(Test2Node,Test2Node)|(r1, r3) -> <span style="color: cornflowerblue;">class soot.jimple.internal.JInvokeStmt</span></div>
+      21 : return r1
+   </code>
+   <div class="imageContainer">
+      <img src="./stateAt_36.DOT.png" alt="PTG stateAt_36">   </div>
+ </div>
+</body>

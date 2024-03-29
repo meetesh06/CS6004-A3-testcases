@@ -1,0 +1,33 @@
+digraph sample {
+  rankDir="LR";
+  subgraph cluster_0 {
+    label="Stack"
+    "$r13"; "$r12"; "$r11"; "$r10"; "$r9"; "$r7"; "$r8"; "$r5"; "$r6"; "$r3"; "$r4"; "$r1"; "$r2"; "$r0"; "r18"; "r19"; "$r15"; "$r14"; "r16"; 
+  }
+  "$r13" -> { };
+  "$r12" -> { };
+  "$r11" -> { };
+  "$r10" -> { };
+  "$r9" -> { };
+  "$r7" -> { };
+  "$r8" -> { };
+  "$r5" -> { };
+  "$r6" -> { };
+  "$r3" -> { };
+  "$r4" -> { };
+  "$r1" -> { };
+  "$r2" -> { };
+  "$r0" -> { };
+  "r18" -> { };
+  "r19" -> { };
+  "$r15" -> { };
+  "$r14" -> { };
+  "r16" -> { };
+  O13[color="red", shape=box, style="filled,dashed"];
+  O12[color="red", shape=box, style="filled,dashed"];
+  O14[color="red", shape=box, style="filled,dashed"];
+  "@null"[color="red", shape=box, style="filled,dashed"];
+  O9[color="red", shape=box, style="filled,dashed"];
+  O11[color="red", shape=box, style="filled,dashed"];
+  O10[color="red", shape=box, style="filled,dashed"];
+}

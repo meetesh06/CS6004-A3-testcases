@@ -1,0 +1,9 @@
+digraph sample {
+  rankDir="LR";
+  subgraph cluster_0 {
+    label="Stack"
+    "r18"; 
+  }
+  "r18" -> { };
+  "@param_0"[color="red", shape=box, style="filled,dashed"];
+}
